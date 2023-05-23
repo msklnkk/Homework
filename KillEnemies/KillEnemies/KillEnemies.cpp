@@ -1,1 +1,3 @@
-//
+void KillEnemies(Context& ctx) {
+
+}
