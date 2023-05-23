@@ -1,6 +1,6 @@
 void KillEnemies(Context& ctx) {
-	for (auto& object : ctx.current_scene) {
-		if (object.enemy.enable) {
+	for (auto& subject : ctx.current_scene) {
+		if (subject.enemy.enable) {
 
 		}
 	}
