@@ -29,5 +29,8 @@ int main() {
 			Gr[y].push_back(x);
 		}
 	}
+	int vertex;
+	cout << "Введите вершину: "; cin >> vertex;
+	cout << endl << "Количество смежных вершин с вершиной " << vertex << ": " << Gr[vertex].size();
 	return 0;
 }
