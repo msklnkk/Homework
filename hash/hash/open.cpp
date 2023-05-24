@@ -3,3 +3,8 @@
 //Выполнить открытое хэширование.Продемонстрировать поиск элемента и удаление элемента.
 //Выбран метод деления по стажу работы
 
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+ifstream in("input.txt");
