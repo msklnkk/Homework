@@ -55,5 +55,9 @@ int main() {
 		}
 	}
 
+	bool* used = new bool[Gr.size()];
+	for (int i = 0; i < Gr.size(); i++)
+		dfs(Gr, i, used);
+
 	return 0;
 }
