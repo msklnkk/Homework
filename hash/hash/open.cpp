@@ -8,3 +8,4 @@
 using namespace std;
 
 ifstream in("input.txt");
+ofstream out("output.txt");
