@@ -7,3 +7,11 @@
 using namespace std;
 
 ifstream in("list.txt");
+
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int x, y;
+	map<int, list<int>> Gr;
+	
+	return 0;
+}
