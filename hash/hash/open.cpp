@@ -74,3 +74,23 @@ void print(people x) {	//вывод из файла
 	cout << left << setw(1) << x.WorkExp << endl;	//стаж работы
 	cout << left << setw(10) << x.Salary << endl;	//зарплата
 }
+
+people GetInfo(string x) {	//функция получения информации о сотруднике из строки
+	people person;
+	int c;
+	c = 0;
+	while (x.size() > 0) {
+		string t = x.substr(0, x.find_first_of(' '));
+		x.erase(0, x.find_first_of(' ') + 1);
+		if (c == 0) person.Surname = t;
+		if (c == 1) person.Post = t;
+		if (c == 2) person.DateOfBirth = Str_to_Date(t);
+		if (c == 3) person.WorkExp = stoi(t);
+		if (c == 4) {
+			person.Salary = stoi(t);
+			break;
+		}
+		c++;
+	}
+	return person;
+}
