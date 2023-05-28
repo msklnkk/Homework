@@ -12,7 +12,6 @@
 using namespace std;
 
 ifstream in("input.txt");
-ofstream out("output.txt");
 
 struct date {	//дата
 	int dd, mm, yy;
