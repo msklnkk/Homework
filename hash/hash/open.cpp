@@ -94,3 +94,7 @@ people GetInfo(string x) {	//функция получения информации о сотруднике из строки
 	}
 	return person;
 }
+
+int hash(people s) {	//функция получения хэша по стажу работы
+	return s.WorkExp % 3;
+}
