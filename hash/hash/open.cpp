@@ -63,3 +63,14 @@ bool operator == (people a, people b) {	//переобозначение оператора == для прове
 	return false;
 }
 
+void print(people x) {	//вывод из файла
+	cout << setw(15) << left << x.Surname;	//по левому краю, 25 позиций для фамилии
+	cout << setw(15) << left << x.Post;	//должность
+	if (x.DateOfBirth.dd < 10) cout << left << '0' << x.DateOfBirth.dd << '.';	//добавляем 0 и точки
+	else cout << left << x.DateOfBirth.dd << '.';
+	if (x.DateOfBirth.mm < 10) cout << '0' << x.DateOfBirth.mm << '.';
+	else cout << x.DateOfBirth.mm << '.';
+	cout << left << setw(6) << x.DateOfBirth.yy;	//на год 6 позиций
+	cout << left << setw(1) << x.WorkExp << endl;	//стаж работы
+	cout << left << setw(10) << x.Salary << endl;	//зарплата
+}
