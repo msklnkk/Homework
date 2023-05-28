@@ -52,3 +52,15 @@ vector <people> inFile() {	//ввод из файла
 	}
 	return x;
 }
+
+bool operator == (date a, date b) {	//переобозначение оператора == для проверки на равенство дат
+	if (a.dd == b.dd && a.mm == b.mm && a.yy == b.yy)
+		return true;
+	return false;
+}
+bool operator == (people a, people b) {	//переобозначение оператора == для проверки на равенство сотрудников
+	if ((a.DateOfBirth == b.DateOfBirth) && (a.WorkExp == b.WorkExp) && (a.Salary = b.Salary) && (a.Surname == b.Surname) && (a.Post == b.Post))
+		return true;
+	return false;
+}
+
